@@ -1,0 +1,60 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Alarmclock.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Document</title>
+</head>
+<body>
+        <div id="inside-container">
+            <div id="container-1" class="container">
+               <div id="clock">
+               </div>
+               <h2 class="settime-content">Set Alarm Time </h2>
+               <div class="alarm-items itemlist">
+                   <div class="sethr setstyle">
+                       <select id="sethr"  class="btnpointer">
+                            </select>
+                   </div>
+                   <div class="setmin setstyle">
+                    <select id="setmin"  class="btnpointer">
+                    </select>
+                </div>
+                   <div class="setsec setstyle">
+                    <select id="setsec"  class="btnpointer"></select>
+                </div>
+                <div class="ampm setstyle">
+                    <select  id="ampm" class="btnpointer">
+                        <option value="AM">AM</option>
+                        <option value="PM">PM</option>
+                    </select>
+                </div>
+            </div>
+                <div id="btn">
+                    <div id="setbtn"> <button class="btns btnpointer"  onclick="setAlarm()">Set Alarm</button></div>
+          <div id="cancelbtn"> <button class="btns btnpointer" id="stopindicate" onclick="clearalarm()">Stop Alarm</button></div>
+               <div id="refresh" class="btnpointer"><i id="reset" class='fa fa-refresh'></i></div>
+
+               </div>
+               <div id="clockactive"> 
+                <img id="clockimg" src="clockbell.jpeg" alt="" >
+                <h1 id="activetime"></h1>
+            </div> 
+            <div id="Alarmset-alert"></div>
+               <div class="alermslist">
+                Your Alarms <i class='fa fa-level-down' id="more"></i>
+            </div>
+               <div class="notes">
+            </div>
+             </div>
+    </div> 
+  <script src="Alarmclock.js"></script>
+</body>
+</html> 
+
+

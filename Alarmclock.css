@@ -1,0 +1,182 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-y: scroll;
+    overflow-x: scroll;
+    background-image: url('clockbg.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+font-family: 'Fjalla One', sans-serif;
+
+}
+#inside-container{
+    display: flex;
+    justify-content: center;
+}
+#container-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 90vw;
+    margin: 20px;
+
+
+}
+.alarm-items{
+    display: flex;
+}
+.alarm-items :nth-child(n){
+    margin: 5px;
+}
+#btn{
+    display: flex;
+  
+}
+#btn :nth-child(n){
+    margin: 5px;
+}
+#clock{
+    font-size: 40px;
+    background-color:black;
+    color: white;
+    width: 300px;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    border-radius: 40px;
+    /* border: 5px dashed white; */
+    /* font-family: 'Fjalla One', sans-serif; */
+    box-shadow: 10px 10px 3px gray
+}
+.settime-content{
+    margin-top: 60px;
+    /* font-family: 'Fjalla One', sans-serif; */
+}
+.setstyle select{
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 20px;
+    border: 2px solid black;
+}
+.setstyle select:active{
+    border: 2px solid red;
+}
+
+#refresh{
+    font-size: 40px;
+}
+.btns{
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    font-size: 25px;
+    border-radius: 20px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    height: fit-content;
+    width: 400px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+box-shadow: 5px 5px 20px black,-5px -5px 20px black;
+}
+.notes{
+    margin-top: 70px;
+display: flex;
+flex-direction: column-reverse;
+/* border: 2px solid black; */
+box-shadow: 10px 10px 20px black,-10px -10px 20px black;
+padding: 30px;
+}
+
+.card{
+    margin-bottom: 20px;
+    border-radius: 25px;
+    font-family: 'Fjalla One', sans-serif;
+padding: 10px 0px 10px 0px;
+}
+.alermslist{
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+    font-family: 'Fjalla One', sans-serif;
+
+}
+.delete{
+    width: fit-content;
+    height: fit-content;
+    font-size: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 7px;
+    cursor: pointer;
+}
+.delete:active{
+background-color: red;
+}
+.btnpointer{
+    cursor: pointer;
+    
+}
+#more{
+    font-size: 60px;
+    cursor: pointer;
+}
+#clockimg{
+    width: 150px;
+    border-radius: 100%;
+   
+}
+#clockactive{
+    display: none;
+}
+#Alarmset-alert{
+    display: none;
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    border: 10px solid red;
+    padding: 10px;
+}
+@media (max-width:550px) {
+    #container-1{
+        margin-left: 40px;
+    }
+    .card{
+     width: 300px;   
+    }
+}
+@media (max-width:300px){
+    #container-1{
+           margin-left: 170px;
+       }
+}
+@media (max-width:170px){
+    #container-1{
+           margin:0px 20px 0px 200px;
+       }
+       #clock{
+           width: fit-content;
+           font-size: 30px;
+           padding: 5px;
+       }
+       .setstyle{
+           width: 50px;
+           font-size: 5px;
+       }
+}

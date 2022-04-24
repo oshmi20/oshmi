@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Notepad</title>
+  <link rel="stylesheet" href="notepad-style.css">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+</head>
+
+<body>
+  <div class="main" id="scroll">
+  <div class="container" id="main-title">
+    <form action="" class="main-form" >
+      <div class=" form-div">
+        <h1 id="updatetext"></h1>
+        <label for="title">Title</label>
+        <input class="input-area" type="text" name="title" id="title" placeholder="Title " autocomplete="off">
+      </div>
+      <div class=" form-div">
+        <label for="discription">Notes</label>
+        <textarea class="discription" name="discription" id="discription"  placeholder="Notes"
+          autocomplete="off"></textarea>
+      </div>
+      <div>
+        <input class="input-area" type="text" name="Date" id="date" placeholder="Enter Date " autocomplete="off"
+          onfocus="(this.type='date')">
+      </div>
+      <button class="submit">+</button>
+      <i id="reset" class='fa fa-refresh'></i>
+    </form>
+  </div></div>
+  <div class="notes">
+    <p id="addnote">Add Your Note</p>
+  </div>
+  <script src="notepad-main.js"></script>
+</body>
+
+</html>
